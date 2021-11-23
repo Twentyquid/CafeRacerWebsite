@@ -143,4 +143,32 @@
   margin-left: 10vw;
 }
 
+.reasons {
+  padding: 1rem 3rem;
+  background-color: #03232b;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.reasons h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+.reasons__one, .reasons__two {
+  padding: 1rem 2rem;
+  background-color: #311f1f;
+}
+.reasons__one p, .reasons__two p {
+  margin-top: 1rem;
+}
+.reasons__one {
+  width: 50vw;
+  margin-right: auto;
+}
+.reasons__two {
+  width: 50vw;
+  margin-left: auto;
+  margin-top: 3rem;
+}
+
 /*# sourceMappingURL=main.css.map */
