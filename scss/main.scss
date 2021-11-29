@@ -4,11 +4,11 @@
   font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
-  :root {
-    font-size: 10px;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   :root {
+//     font-size: 10px;
+//   }
+// }
 
 *,
 *::after,
@@ -22,28 +22,79 @@
   background-color: #023d42;
   color: white;
   text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+
+.brand-icon {
+  font-size: 1.5rem;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+  }
 }
 
 .nav-list {
-  padding: 2.6rem 2rem;
-  font-size: 1.5rem;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  span {
-    flex: 0 1 25rem;
+  ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+  }
 
-    li {
-      cursor: pointer;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
+  li {
+    list-style-type: none;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #193436;
     }
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-btn {
+    display: flex;
+  }
+  .nav-list {
+    display: none;
+    width: 100%;
+
+    ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
