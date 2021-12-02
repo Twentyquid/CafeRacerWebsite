@@ -102,6 +102,14 @@
   letter-spacing: 1rem;
   font-family: "Roboto Slab", serif;
 }
+@media screen and (max-width: 600px) {
+  .hero__title {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    margin-top: 2rem;
+  }
+}
 .hero__description {
   width: 30%;
   word-spacing: 0.3rem;
@@ -118,6 +126,11 @@
   margin-top: 1.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .hero__description {
+    width: 60%;
+  }
+}
 .services {
   background-color: #193436;
   padding-top: 2rem;
@@ -215,6 +228,13 @@
   width: 50vw;
   margin-left: auto;
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
